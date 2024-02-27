@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header>
+        <h2>Presupuesto disponible</h2>
+        <h1>$2000.00</h1>
+        <div id="ingresos">
+            INGRESOS
+        </div>
+        <div id="egresos">
+            EGRESOS
+        </div>
+    </header>
+    <form id="formulario">
+        <select name="+-" id="+-">
+            <option value="mas">+</option>
+            <option value="menos">-</option>
+        </select>
+        <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese una descripcion">
+        <input type="number" name="numero" id="monto" placeholder="Ingrese un monto">
+        <button type="button" onclick="añadir()"><img src="./assets/images/tick.svg" alt="ok" id="tick" ></button>
+    </form>
+    <section id="cuadro">
+        <div id="listaIngresos">INGRESOS
+            <div id="ingreso-reciente">
+                <p id="mostrarDescripcionIngreso"></p>
+                <p id="mostrarMontoIngreso"></p>
+            </div>
+        </div>
+        
+        <div id="listaEgresos">EGRESOS
+            <div id="ingreso-reciente">
+                <p id="mostrarDescripcionEgreso"></p>
+                <p id="mostrarMontoEgreso"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./codigo.js"></script>
+</body>
+</html>

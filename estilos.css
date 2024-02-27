@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid red;
+}
+
+header{
+    width:100%;
+    height: 40vh;
+    background: linear-gradient(to right, rgba(243, 161, 8, 0.541), rgba(212, 32, 32, 0.616)), url(./assets/images/68.jpg);
+    background-size: contain;
+    padding: 0.1px
+}
+
+header h2, h1{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#ingresos{
+    background-color: rgb(24, 158, 199);
+    color: white;
+    text-align: center;
+    width: 40%;
+    height: 2.5rem;
+    display: flex;
+    margin:20px auto;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0 20px;
+}
+
+#egresos{
+    background-color: rgb(223, 114, 25);
+    color: white;
+    text-align: center;
+    width: 40%;
+    height: 2.5rem;
+    display: flex;
+    margin:20px auto;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0 20px;
+}
+
+#formulario{
+    display: flex;
+    height: 4rem;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(179, 174, 174);
+}
+
+#formulario input{
+    height: 80%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-width: 300px ;
+}
+
+select{
+    height: 80%;
+    width: 50px;
+    padding: 0 5px;
+}
+
+#formulario button{
+    height: 75%;
+    cursor: pointer;
+    border: none;
+}
+
+#tick{
+    height: 100%;
+    background-color:rgb(179, 174, 174);
+    color: rgb(18, 56, 11);
+    pointer-events: none;
+}
+
+#cuadro{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+#listaIngresos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    color:rgb(24, 158, 199);
+}
+
+#listaEgresos{
+    width: 30%;
+    padding: 20px;
+    color:rgb(223, 114, 25);
+    min-height: 300px;
+}
+
+#ingreso-reciente{
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-start;
+    color: gray;
+}
